@@ -28,7 +28,7 @@
                 return $rval === 0;
         }
 
-        $host = 'eu.battle.net';
+        $host = 'google.com';
         $up = ping($host);
 
         if ($up) {

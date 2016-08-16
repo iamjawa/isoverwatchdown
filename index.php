@@ -61,6 +61,49 @@
                             }
                 ?>
             </p>
+          </div>
+
+          <div class="col s4 status-box">
+            <p class="am-status-box">
+              <?php
+
+                            $host = 'www.google.com';
+                            $up = ping($host);
+
+                            if ($up) {
+                              echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
+                              echo "<h3 class='status-box'>American Server is Responding.</h3>";
+                            }
+
+                            else {
+                              echo "<i class='fa fa-times status-down' aria-hidden='true'></i><br>";
+                              echo "<h3 class='status-box'>American Server is not Responding.</h3>";
+                            }
+                ?>
+            </p>
+          </div>
+
+          <div class="col s4 status-box">
+            <p class="ko-status-box">
+              <?php
+
+                            $host = 'www.google.com';
+                            $up = ping($host);
+
+                            if ($up) {
+                              echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
+                              echo "<h3 class='status-box'>Korean Server is Responding.</h3>";
+                            }
+
+                            else {
+                              echo "<i class='fa fa-times status-down' aria-hidden='true'></i><br>";
+                              echo "<h3 class='status-box'>Korean Server is not Responding.</h3>";
+                            }
+                ?>
+            </p>
+          </div>
+        </div>
+
 
       </main>
     </body>

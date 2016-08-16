@@ -29,13 +29,13 @@
                 return $rval === 0;
         }
 
-        $eu = '185.60.112.157';
+        $eu = 'google.co.uk';
         $eup = ping($eu);
 
-        $american = '37.244.0.3';
+        $american = 'google.com';
         $aup = ping($american);
 
-        $korean = '121.254.206.1';
+        $korean = 'google.ru';
         $kup = ping($korean);
 
         if ($eup && $aup) {

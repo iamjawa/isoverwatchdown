@@ -64,7 +64,7 @@
 
                             if ($aup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
-                              echo "<h3 class='status-box'>American Server is Responding.<br>()</h3>";
+                              echo "<h3 class='status-box'>American Server is Responding.</h3>";
                             }
 
                             else {

@@ -39,35 +39,35 @@
         $kup = ping($korean);
 
         if ($eup && $aup && $kup) {
-          echo "<h2 class='definitely-not'>Doesn't look down from here.</h2>";
+          echo "<h2 class='definitely-not generalstatus'>Doesn't look down from here.</h2>";
         }
 
         elseif ($eup && $aup) {
-          echo "<h2 class='not-down'>Definitely Not Down.</h2>";
+          echo "<h2 class='not-down generalstatus'>Definitely Not Down.</h2>";
         }
 
         elseif ($eup && $kup) {
-          echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
+          echo "<h2 class='not-down generalstatus'>Depends where you live, but probably Not.</h2>";
         }
 
         elseif ($aup && $kup) {
-          echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
+          echo "<h2 class='not-down generalstatus'>Depends where you live, but probably Not.</h2>";
         }
 
         elseif ($eup) {
-          echo "<h2 class='not-down'>Depends where you live, but it's probably down.</h2>";
+          echo "<h2 class='not-down generalstatus'>Depends where you live, but it's probably down.</h2>";
         }
 
         elseif ($aup) {
-          echo "<h2 class='not-down'>Depends where you live, but it's probably down.</h2>";
+          echo "<h2 class='not-down generalstatus'>Depends where you live, but it's probably down.</h2>";
         }
 
         elseif ($kup) {
-          echo "<h2 class='not-down'>Depends where you live, but it's probably down.</h2>";
+          echo "<h2 class='not-down generalstatus'>Depends where you live, but it's probably down.</h2>";
         }
 
         else {
-          echo "<h2 class='down'>Looks Like It From Here.</h2>";
+          echo "<h2 class='down generalstatus'>Looks Like It From Here.</h2>";
         }
 
         ?>

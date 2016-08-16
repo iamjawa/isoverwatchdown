@@ -1,3 +1,9 @@
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1rem !important;
+  }
+}
+
 @font-face {
   font-family: HelveticaNeue;
   src: url(/fonts/helvetica-neue/HelveticaNeue.otf);
@@ -55,6 +61,8 @@ main {
   font-size: 4rem;
   margin-top: 0;
   padding-top: 5rem;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
   text-align: center;
   color: #FFFEFF;
   padding-bottom: 5rem;
@@ -111,4 +119,9 @@ h3 {
   font-size: 2rem !important;
   color: #FFFEFF;
   font-family: HelveticaNeueThin !important;
+}
+
+.generalstatus {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }

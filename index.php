@@ -21,6 +21,7 @@
         <h1 class="main-header">Is Overwatch <span class="down-title">Down</span>?</h1>
 
         <?php
+          echo "This shows the PHP is working";
           $euserver = '185.60.112.157';
           $americanserver = '37.244.0.3';
           $koreaserver = '121.254.206.1';

@@ -23,11 +23,9 @@
 
         <?php
 
-        sleep(7);
-
         function ping($host)
         {
-                exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
+                exec(sprintf('ping -c 1 -W 2 %s', escapeshellarg($host)), $res, $rval);
                 return $rval === 0;
         }
 
@@ -67,8 +65,6 @@
             <p class="eu-status-box">
               <?php
 
-              sleep(7);
-
                             if ($eup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>EU Server is Responding.</h3>";
@@ -86,8 +82,6 @@
             <p class="am-status-box">
               <?php
 
-              sleep(7);
-
                             if ($aup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>American Server is Responding.</h3>";
@@ -104,8 +98,6 @@
           <div class="col s4 status-box">
             <p class="ko-status-box">
               <?php
-
-              sleep(7);
 
                             if ($kup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";

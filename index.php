@@ -56,13 +56,13 @@
               $up = ping($host);
 
               if ($up) {
-                echo '<i class="fa fa-check status-up" aria-hidden="true"></i><br>';
-                echo '<h3 class="status-box">EU Server is Responding.';
+                echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
+                echo "<h3 class='status-box'>EU Server is Responding.";
               }
 
               else {
-                echo '<i class="fa fa-times status-down" aria-hidden="true"></i><br>';
-                echo '<h3 class="status-box">EU Server is not Responding.';
+                echo "<i class='fa fa-times status-down' aria-hidden='true'></i><br>";
+                echo "<h3 class='status-box'>EU Server is not Responding.";
               }
 
               ?>

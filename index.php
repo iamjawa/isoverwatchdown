@@ -28,7 +28,7 @@
           }
 
           echo "This shows the PHP is working";
-          $euserver = 'google.com';
+          $euserver = 'www.google.com';
           $americanserver = '37.244.0.3';
           $koreaserver = '121.254.206.1';
           $taiwanserver = '203.75.93.129';

@@ -29,29 +29,29 @@
                 return $rval === 0;
         }
 
-        $host = 'www.google.com';
-        $up = ping($host);
+        $eu = '185.60.112.157';
+        $eup = ping($eu);
 
-        $american = 'www.isoverwatchdown.com';
+        $american = '37.244.0.3';
         $aup = ping($american);
 
-        $korean = 'www.google.com';
+        $korean = '121.254.206.1';
         $kup = ping($korean);
 
-        if ($up && $aup) {
-          echo "<h2 class='not-down'>Probably Not Down.</h2>";
+        if ($eup && $aup) {
+          echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
         }
 
-        elseif ($up && $aup && $kup) {
+        elseif ($eup && $aup && $kup) {
           echo "<h2 class='definitely-not'>Definitely Not Down.</h2>";
         }
 
-        elseif ($up && $kup) {
-          echo "<h2 class='not-down'>Probably Not Down.</h2>";
+        elseif ($eup && $kup) {
+          echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
         }
 
         elseif ($aup && $kup) {
-          echo "<h2 class='not-down'>Probably Not Down.</h2>";
+          echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
         }
 
         else {
@@ -65,7 +65,7 @@
             <p class="eu-status-box">
               <?php
 
-                            if ($up) {
+                            if ($eup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>EU Server is Responding.</h3>";
                             }

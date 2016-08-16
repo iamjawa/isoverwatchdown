@@ -128,7 +128,7 @@
         <div class="row">
           <div class="col s12">
             <h4 class="plug">
-              &copy; <?php echo date("Y"); ?> iamjawa
+              Made with <i class="fa fa-heart" aria-hidden="true"></i> by iamjawa
             </h4>
           </div>
         </div>

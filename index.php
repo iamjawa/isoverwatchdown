@@ -54,6 +54,18 @@
           echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
         }
 
+        elseif ($eup) {
+          echo "<h2 class='not-down'>Depends where you live, but it's probably down.</h2>";
+        }
+
+        elseif ($aup) {
+          echo "<h2 class='not-down'>Depends where you live, but it's probably down.</h2>";
+        }
+
+        elseif ($kup) {
+          echo "<h2 class='not-down'>Depends where you live, but it's probably down.</h2>";
+        }
+
         else {
           echo "<h2 class='down'>Looks Like It From Here.</h2>";
         }

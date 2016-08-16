@@ -32,7 +32,7 @@
         $host = 'www.google.com';
         $up = ping($host);
 
-        $american = 'www.google.com';
+        $american = 'www.isoverwatchdown.com';
         $aup = ping($american);
 
         if ($up && $aup) {

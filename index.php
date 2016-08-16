@@ -19,6 +19,26 @@
     <body>
       <main>
         <h1 class="main-header">Is Overwatch <span class="down-title">Down</span>?</h1>
+
+        <?php
+          $euserver = '185.60.112.157';
+          $americanserver = '37.244.0.3';
+          $koreaserver = '121.254.206.1';
+          $taiwanserver = '203.75.93.129';
+
+          $euping = ping($euserver);
+          $amping = ping($americanserver);
+          $koping = ping($koreaserver);
+          $taping = ping($taiwanserver);
+
+          if ( $euping ) {
+            echo "<h2>Probably Not</h2>";
+          }
+
+          else {
+            echo "<h2>Probably</h2>";
+          }
+         ?>
       </main>
     </body>
 

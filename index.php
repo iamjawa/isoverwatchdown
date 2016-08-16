@@ -29,7 +29,7 @@
                 return $rval === 0;
         }
 
-        $eu = 'overwatchtracker.collator_compare';
+        $eu = 'overwatchtracker.com';
         $eup = ping($eu);
 
         $american = 'overwatchtracker.com';

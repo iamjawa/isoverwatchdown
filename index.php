@@ -32,11 +32,11 @@
         $up = ping($host);
 
         if ($up) {
-          echo '<h2 class="not-down">Probably Not Down.</h2>';
+          echo "<h2 class=\"not-down\">Probably Not Down.</h2>";
         }
 
         else {
-          echo '<h2 class="down">Looks Like It From Here.</h2>';
+          echo "<h2 class=\"down\">Looks Like It From Here.</h2>";
         }
 
         ?>
@@ -56,13 +56,13 @@
               $up = ping($host);
 
               if ($up) {
-                echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
-                echo "<h3 class='status-box'>EU Server is Responding.";
+                echo "<i class=\"fa fa-check status-up\" aria-hidden=\"true\"></i><br>";
+                echo "<h3 class=\"status-box\">EU Server is Responding.</h3>";
               }
 
               else {
-                echo "<i class='fa fa-times status-down' aria-hidden='true'></i><br>";
-                echo "<h3 class='status-box'>EU Server is not Responding.";
+                echo "<i class=\"fa fa-times status-down\" aria-hidden=\"true\"></i><br>";
+                echo "<h3 class=\"status-box\">EU Server is not Responding.</h3>";
               }
 
               ?>

@@ -103,11 +103,17 @@ main {
 .status-up {
   color: #3C91E6;
   font-size: 4vw !important;
+  border-radius: 50%;
+  border: solid;
+  padding: 10px;
 }
 
 .status-down {
   color: #EF6461;
   font-size: 4vw !important;
+  border-radius: 50%;
+  border: solid;
+  padding: 10px;
 }
 
 .eu-status-box {

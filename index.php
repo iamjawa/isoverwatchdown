@@ -23,6 +23,8 @@
 
         <?php
 
+        set_time_limit(10);
+
         function ping($host)
         {
                 exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
@@ -65,6 +67,8 @@
             <p class="eu-status-box">
               <?php
 
+              set_time_limit(10);
+
                             if ($eup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>EU Server is Responding.</h3>";
@@ -82,6 +86,8 @@
             <p class="am-status-box">
               <?php
 
+              set_time_limit(10);
+
                             if ($aup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>American Server is Responding.</h3>";
@@ -98,6 +104,8 @@
           <div class="col s4 status-box">
             <p class="ko-status-box">
               <?php
+
+              set_time_limit(10);
 
                             if ($kup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";

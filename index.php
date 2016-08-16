@@ -23,7 +23,7 @@
 
         <?php
 
-        set_time_limit(10);
+        set_time_limit(5);
 
         function ping($host)
         {
@@ -67,7 +67,7 @@
             <p class="eu-status-box">
               <?php
 
-              set_time_limit(10);
+              set_time_limit(5);
 
                             if ($eup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
@@ -86,7 +86,7 @@
             <p class="am-status-box">
               <?php
 
-              set_time_limit(10);
+              set_time_limit(5);
 
                             if ($aup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
@@ -105,7 +105,7 @@
             <p class="ko-status-box">
               <?php
 
-              set_time_limit(10);
+              set_time_limit(5);
 
                             if ($kup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";

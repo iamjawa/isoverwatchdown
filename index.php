@@ -32,11 +32,11 @@
         $up = ping($host);
 
         if ($up) {
-          echo "<h2 class=\"not-down\">Probably Not Down.</h2>";
+          echo "<h2 class='not-down'>Probably Not Down.</h2>";
         }
 
         else {
-          echo "<h2 class=\"down\">Looks Like It From Here.</h2>";
+          echo "<h2 class='down'>Looks Like It From Here.</h2>";
         }
 
         ?>
@@ -46,26 +46,25 @@
             <p class="eu-status-box">
               <?php
 
-              function ping($host)
-              {
-                      exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
-                      return $rval === 0;
-              }
+                            function ping($host)
+                            {
+                                    exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
+                                    return $rval === 0;
+                            }
 
-              $host = 'www.google.com';
-              $up = ping($host);
+                            $host = 'www.google.com';
+                            $up = ping($host);
 
-              if ($up) {
-                echo "<i class=\"fa fa-check status-up\" aria-hidden=\"true\"></i><br>";
-                echo "<h3 class=\"status-box\">EU Server is Responding.</h3>";
-              }
+                            if ($up) {
+                              echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
+                              echo "<h3 class='status-box'>EU Server is Responding.</h3>";
+                            }
 
-              else {
-                echo "<i class=\"fa fa-times status-down\" aria-hidden=\"true\"></i><br>";
-                echo "<h3 class=\"status-box\">EU Server is not Responding.</h3>";
-              }
-
-              ?>
+                            else {
+                              echo "<i class='fa fa-times status-down' aria-hidden='true'></i><br>";
+                              echo "<h3 class='status-box'>EU Server is not Responding.</h3>";
+                            }
+                ?>
             </p>
 
       </main>

@@ -43,7 +43,7 @@
         ?>
 
         <div class="row">
-          <div class="col s4">
+          <div class="col s4 status-box">
             <p class="eu-status-box">
               <?php
 

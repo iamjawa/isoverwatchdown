@@ -21,7 +21,12 @@
         <h1 class="main-header">Is Overwatch <span class="down-title">Down</span>?</h1>
 
         <?php
-          function ping($host,$port=80,$timeout=6)
+        
+          function ping($host) {
+            exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
+            return $rval === 0;
+          }
+
           echo "This shows the PHP is working";
           $euserver = 'eu.battle.net';
           $americanserver = '37.244.0.3';

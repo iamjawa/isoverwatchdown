@@ -143,3 +143,11 @@ h3 {
 .fa-heart {
   color: #EF6461 !important;
 }
+
+.plug_link {
+  color: #FFEFFF !important;
+}
+
+.plug_link:hover {
+  color: #F99D1B !important;
+}

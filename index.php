@@ -32,12 +32,6 @@
         $host = 'www.google.com';
         $up = ping($host);
 
-        function ping($american)
-        {
-                exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($american)), $res, $rval);
-                return $rval === 0;
-        }
-
         $american = 'www.google.com';
         $aup = ping($american);
 

@@ -128,7 +128,7 @@
         <div class="row">
           <div class="col s12">
             <h4 class="plug">
-              Made with <i class="fa fa-heart" aria-hidden="true"></i> by iamjawa
+              Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.twitter.com/iamjawa" target="_blank">iamjawa</a>
             </h4>
           </div>
         </div>

@@ -22,30 +22,23 @@
 
         <?php
           echo "This shows the PHP is working";
-          $euserver = '185.60.112.157';
+          $euserver = 'eu.battle.net';
           $americanserver = '37.244.0.3';
           $koreaserver = '121.254.206.1';
           $taiwanserver = '203.75.93.129';
 
-          $ch = curl_init();
+          $euping = ping($euserver);
+          $amping = ping($americanserver);
+          $koping = ping($koreaserver);
+          $taping = ping($taiwanserver);
 
-          // set URL and other appropriate options
-          curl_setopt($ch, CURLOPT_URL, "$euserver");
-          curl_setopt($ch, CURLOPT_HEADER, 0);
-
-          // grab URL and pass it to the browser
-          curl_exec($ch);
-
-          if ( $ch ) {
+          if ( $euping ) {
             echo "<h2>Probably Not</h2>";
           }
 
           else {
             echo "<h2>Probably</h2>";
           }
-
-          // close cURL resource, and free up system resources
-          curl_close($ch);
          ?>
       </main>
     </body>

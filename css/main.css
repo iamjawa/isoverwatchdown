@@ -1,3 +1,33 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(/fonts/helvetica-neue/HelveticaNeue.otf);
+  src: url(/fonts/helvetica-neue/HelveticaNeue.ttf);
+}
+
+@font-face {
+  font-family: HelveticaNeueThin;
+  src: url(/fonts/helvetica-neue/HelveticaNeue-Thin.otf);
+  src: url(/fonts/helvetica-neue/HelveticaNeue-Thin.ttf);
+}
+
+@font-face {
+  font-family: WhitneyMedium;
+  src: url(/fonts/whitney-medium/whitney-medium.otf);
+  src: url(/fonts/whitney-medium/whitney-medium.ttf);
+}
+
+@font-face {
+  font-family: LatoHeavy;
+  src: url(/fonts/lato/lato-heavy.otf);
+  src: url(/fonts/lato/lato-heavy.ttf);
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(/fonts/fa/fontawesome.otf);
+  src: url(/fonts/fa/fontawesome.ttf);
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -15,6 +45,7 @@ main {
 }
 
 .main-header {
+  font-size: 3.5rem;
   margin-top: 0;
   padding-top: 5rem;
   text-align: center;

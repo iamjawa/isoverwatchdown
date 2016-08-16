@@ -32,7 +32,16 @@
         $host = 'www.google.com';
         $up = ping($host);
 
-        if ($up) {
+        function ping($american)
+        {
+                exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($american)), $res, $rval);
+                return $rval === 0;
+        }
+
+        $american = 'www.google.com';
+        $aup = ping($american);
+
+        if ($up && $aup) {
           echo "<h2 class='not-down'>Probably Not Down.</h2>";
         }
 

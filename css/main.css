@@ -93,6 +93,10 @@ main {
   text-align: center;
 }
 
+h2 {
+  padding-bottom: 3.5rem !important;
+}
+
 h3 {
   font-size: 2rem !important;
   color: #FFFEFF;

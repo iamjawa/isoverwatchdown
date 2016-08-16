@@ -125,7 +125,13 @@
           </div>
         </div>
 
-
+        <div class="row">
+          <div class="col s12">
+            <h4 class="plug">
+              &copy; <?php echo date("Y"); ?> iamjawa
+            </h4>
+          </div>
+        </div>
       </main>
     </body>
 

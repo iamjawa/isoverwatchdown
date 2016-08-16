@@ -39,7 +39,7 @@
         $kup = ping($korean);
 
         if ($eup && $aup && $kup) {
-          echo "<h2 class='definitely-not generalstatus'>Doesn't look down from here.</h2>";
+          echo "<h2 class='definitely-not generalstatus'>Servers all look good from here.</h2>";
         }
 
         elseif ($eup && $aup) {

@@ -71,6 +71,13 @@ main {
   font-size: 2.5rem !important;
 }
 
+.definitely-not {
+  color: #3C91E6;
+  text-align: center !important;
+  font-family: WhitneyMedium;
+  font-size: 2.5rem !important;
+}
+
 .not-down {
   color: #3C91E6;
   text-align: center !important;

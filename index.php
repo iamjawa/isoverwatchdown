@@ -35,7 +35,22 @@
         $american = 'www.isoverwatchdown.com';
         $aup = ping($american);
 
+        $korean = 'www.google.com';
+        $kup = ping($korean);
+
         if ($up && $aup) {
+          echo "<h2 class='not-down'>Probably Not Down.</h2>";
+        }
+
+        elseif ($up && $aup && $kup) {
+          echo "<h2 class='definitely-not'>Definitely Not Down.</h2>";
+        }
+
+        elseif ($up && $kup) {
+          echo "<h2 class='not-down'>Probably Not Down.</h2>";
+        }
+
+        elseif ($aup && $kup) {
           echo "<h2 class='not-down'>Probably Not Down.</h2>";
         }
 
@@ -49,9 +64,6 @@
           <div class="col s4 status-box">
             <p class="eu-status-box">
               <?php
-
-                            $host = 'www.isoverwatchdown.com';
-                            $up = ping($host);
 
                             if ($up) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
@@ -70,10 +82,7 @@
             <p class="am-status-box">
               <?php
 
-                            $host = 'www.google.com';
-                            $up = ping($host);
-
-                            if ($up) {
+                            if ($aup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>American Server is Responding.</h3>";
                             }
@@ -90,10 +99,7 @@
             <p class="ko-status-box">
               <?php
 
-                            $host = 'www.google.com';
-                            $up = ping($host);
-
-                            if ($up) {
+                            if ($kup) {
                               echo "<i class='fa fa-check status-up' aria-hidden='true'></i><br>";
                               echo "<h3 class='status-box'>Korean Server is Responding.</h3>";
                             }

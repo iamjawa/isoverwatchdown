@@ -31,7 +31,13 @@
         $host = 'eu.battle.net';
         $up = ping($host);
 
-        echo $up;
+        if ($up) {
+          echo "Probably Not";
+        }
+
+        else {
+          echo "Probably";
+        }
 
         ?>
       </main>

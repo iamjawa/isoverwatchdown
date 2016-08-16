@@ -74,3 +74,15 @@ main {
   text-align: center !important;
   font-family: WhitneyMedium;
 }
+
+.status-up {
+  color: #3C91E6;
+}
+
+.status-down {
+  color: #EF6461;
+}
+
+.eu-status-box {
+  text-align: center;
+}

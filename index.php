@@ -40,6 +40,34 @@
         }
 
         ?>
+
+        <div class="row">
+          <div class="col s4">
+            <p class="eu-status-box">
+              <?php
+
+              function ping($host)
+              {
+                      exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
+                      return $rval === 0;
+              }
+
+              $host = '86.135.61.137';
+              $up = ping($host);
+
+              if ($up) {
+                echo '<i class="fa fa-check status-up" aria-hidden="true"></i><br>';
+                echo '<h3 class="status-box">EU Server is Responding.';
+              }
+
+              else {
+                echo '<i class="fa fa-times status-down" aria-hidden="true"></i><br>';
+                echo '<h3 class="status-box">EU Server is not Responding.';
+              }
+
+              ?>
+            </p>
+
       </main>
     </body>
 

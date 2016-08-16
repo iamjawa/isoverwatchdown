@@ -1,0 +1,14 @@
+main {
+  background-color: #43484D;
+  height: 100%;
+  width: 100%;
+}
+
+.main-header {
+  text-align: center;
+  color: #FFFEFF;
+}
+
+.down-title {
+  color: #F99D1B;
+}

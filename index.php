@@ -38,12 +38,12 @@
         $korean = 'google.ru';
         $kup = ping($korean);
 
-        if ($eup && $aup) {
-          echo "<h2 class='not-down'>Depends where you live, but probably Not.</h2>";
+        if ($eup && $aup && $kup) {
+          echo "<h2 class='definitely-not'>Doesn't look down from here.</h2>";
         }
 
-        elseif ($eup && $aup && $kup) {
-          echo "<h2 class='definitely-not'>Definitely Not Down.</h2>";
+        elseif ($eup && $aup) {
+          echo "<h2 class='not-down'>Definitely Not Down.</h2>";
         }
 
         elseif ($eup && $kup) {

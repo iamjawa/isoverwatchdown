@@ -18,8 +18,8 @@
 
     <body>
       <main>
-        <h1 class="main-header">Is Overwatch <span class="down-title">Down?</span></h1>
+        <h1 class="main-header">Is Overwatch <span class="down-title">Down</span>?</h1>
       </main>
     </body>
-    
+
 </html>

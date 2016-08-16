@@ -22,12 +22,12 @@
 
         <?php
           echo "This shows the PHP is working";
-          $euserver = 'www.google.com';
+          $euserver = '185.60.112.157';
           $americanserver = '37.244.0.3';
           $koreaserver = '121.254.206.1';
           $taiwanserver = '203.75.93.129';
 
-          $euping = ping($euserver);
+          $euping = curl_init($euserver);
           $amping = ping($americanserver);
           $koping = ping($koreaserver);
           $taping = ping($taiwanserver);

@@ -29,13 +29,13 @@
                 return $rval === 0;
         }
 
-        $eu = 'overwatchtracker.com';
+        $eu = '185.60.112.157';
         $eup = ping($eu);
-
-        $american = 'overwatchtracker.com';
+        
+        $american = '37.244.0.3';
         $aup = ping($american);
-
-        $korean = 'overwatchtracker.com';
+        
+        $korean = '121.254.206.1';
         $kup = ping($korean);
 
         ?>

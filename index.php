@@ -28,7 +28,7 @@
                 return $rval === 0;
         }
 
-        $host = '86.135.61.137';
+        $host = 'www.google.com';
         $up = ping($host);
 
         if ($up) {
@@ -52,7 +52,7 @@
                       return $rval === 0;
               }
 
-              $host = '86.135.61.137';
+              $host = 'www.google.com';
               $up = ping($host);
 
               if ($up) {

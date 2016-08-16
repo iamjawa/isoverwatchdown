@@ -55,15 +55,15 @@
         }
 
         elseif ($eup) {
-          echo "<h2 class='not-down generalstatus'>Depends where you live, but it's probably down.</h2>";
+          echo "<h2 class='maybe-down generalstatus'>Depends where you live, but it's probably down.</h2>";
         }
 
         elseif ($aup) {
-          echo "<h2 class='not-down generalstatus'>Depends where you live, but it's probably down.</h2>";
+          echo "<h2 class='maybe-down generalstatus'>Depends where you live, but it's probably down.</h2>";
         }
 
         elseif ($kup) {
-          echo "<h2 class='not-down generalstatus'>Depends where you live, but it's probably down.</h2>";
+          echo "<h2 class='maybe-down generalstatus'>Depends where you live, but it's probably down.</h2>";
         }
 
         else {

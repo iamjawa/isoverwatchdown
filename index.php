@@ -21,14 +21,14 @@
         <h1 class="main-header">Is Overwatch <span class="down-title">Down</span>?</h1>
 
         <?php
-        
-          function ping($host) {
-            exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
+
+          function ping() {
+            exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg()), $res, $rval);
             return $rval === 0;
           }
 
           echo "This shows the PHP is working";
-          $euserver = 'eu.battle.net';
+          $euserver = 'google.com';
           $americanserver = '37.244.0.3';
           $koreaserver = '121.254.206.1';
           $taiwanserver = '203.75.93.129';

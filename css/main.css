@@ -65,7 +65,7 @@ main {
   padding-right: 5vw !important;
   text-align: center;
   color: #FFFEFF;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .down-title {
@@ -150,4 +150,8 @@ h3 {
 
 .plug_link:hover {
   color: #F99D1B !important;
+}
+
+.statuses {
+  padding-bottom: 3rem !important;
 }

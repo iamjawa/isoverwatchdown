@@ -47,7 +47,7 @@
             <p class="eu-status-box">
               <?php
 
-                            $host = 'www.google.com';
+                            $host = 'www.isoverwatchdown.com';
                             $up = ping($host);
 
                             if ($up) {

@@ -62,3 +62,15 @@ main {
 .down-title {
   color: #F99D1B;
 }
+
+.down {
+  color: #EF6461;
+  text-align: center !important;
+  font-family: WhitneyMedium;
+}
+
+.not-down {
+  color: #3C91E6;
+  text-align: center !important;
+  font-family: WhitneyMedium;
+}

@@ -28,15 +28,15 @@
                 return $rval === 0;
         }
 
-        $host = 'google.com';
+        $host = '86.135.61.137';
         $up = ping($host);
 
         if ($up) {
-          echo "Probably Not";
+          echo '<h2 class="not-down">Probably Not Down.</h2>';
         }
 
         else {
-          echo "Probably";
+          echo '<h2 class="down">Looks Like It From Here.</h2>';
         }
 
         ?>

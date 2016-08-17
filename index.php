@@ -1,3 +1,22 @@
+<?php
+
+function ping($host)
+{
+        exec(sprintf('ping -c 1 -W 2 %s', escapeshellarg($host)), $res, $rval);
+        return $rval === 0;
+}
+
+$eu = 'overwatchtracker.com';
+$eup = ping($eu);
+
+$american = 'overwatchtracker.com';
+$aup = ping($american);
+
+$korean = 'overwatchtracker.com';
+$kup = ping($korean);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +27,15 @@
         <meta name="keywords" content="Genuinity, Genuine">
         <meta name="authxor" content="iamjawa">
         <meta name="theme-color" content="#435662">
-        <title>Is Overwatch Down?</title>
+        <?php
+          if ($eup or $aup or $kup) {
+            echo "<title>No - Is Overwatch Down?</title>";
+          }
+
+          else {
+            echo "<title>Yes - Is Overwatch Down?</title>";
+          }
+         ?>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/css/main.css" type="text/css">
         <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
@@ -20,25 +47,6 @@
     <body>
       <main>
         <h1 class="main-header">Is Overwatch <span class="down-title">Down</span>?</h1>
-
-        <?php
-
-        function ping($host)
-        {
-                exec(sprintf('ping -c 1 -W 2 %s', escapeshellarg($host)), $res, $rval);
-                return $rval === 0;
-        }
-
-        $eu = 'overwatchtracker.com';
-        $eup = ping($eu);
-        
-        $american = 'overwatchtracker.com';
-        $aup = ping($american);
-        
-        $korean = 'overwatchtracker.com';
-        $kup = ping($korean);
-
-        ?>
 
         <div class="row statuses">
           <div class="col s4 status-box">

@@ -1,6 +1,6 @@
 <?php
 
-include "ping.php";
+require "ping.php";
 
 ?>
 

@@ -23,9 +23,9 @@ $kup = ping($korean);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="17, Freelance Web Developer, UK.">
-        <meta name="keywords" content="Genuinity, Genuine">
-        <meta name="authxor" content="iamjawa">
+        <meta name="description" content="Live status checker for Blizzard's Overwatch servers.">
+        <meta name="keywords" content="Overwatch">
+        <meta name="author" content="iamjawa">
         <meta name="theme-color" content="#435662">
         <?php
           if ($eup or $aup or $kup) {

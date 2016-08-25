@@ -6,13 +6,13 @@ function ping($host)
         return $rval === 0;
 }
 
-$eu = 'overwatchtracker.com';
+$eu = 'overwatchtracker.com'; // Waiting on IP's
 $eup = ping($eu);
 
-$american = 'overwatchtracker.com';
+$american = 'overwatchtracker.com'; // Waiting on IP's
 $aup = ping($american);
 
-$korean = 'overwatchtracker.com';
+$korean = 'overwatchtracker.com'; // Waiting on IP's
 $kup = ping($korean);
 
 ?>

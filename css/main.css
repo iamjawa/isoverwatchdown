@@ -105,7 +105,7 @@ main {
   font-size: 3vw !important;
   border-radius: 50%;
   border: solid;
-  padding: 15px;
+  padding: 2.25rem;
 }
 
 .status-down {
@@ -113,7 +113,7 @@ main {
   font-size: 3vw !important;
   border-radius: 50%;
   border: solid;
-  padding: 15px;
+  padding: 2.25rem;
 }
 
 .eu-status-box {

@@ -2,17 +2,18 @@
 
 function ping($host)
 {
-        exec(sprintf('ping -c 1 -W 2 %s', escapeshellarg($host)), $res, $rval);
-        return $rval === 0;
+        exec(sprintf('ping -c 1 -W 2 %s', escapeshellarg($host)));
 }
 
+sleep(5);
 $eu = '185.60.112.157';
-$eup = ping($eu);
-
+sleep(3);
 $american = '37.244.0.3';
-$aup = ping($american);
-
+sleep(3);
 $korean = '121.254.206.1';
+
+$eup = ping($eu);
+$aup = ping($american);
 $kup = ping($korean);
 
 ?>
